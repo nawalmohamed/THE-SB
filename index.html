@@ -2,7 +2,30 @@
 <img id="image"
 width="350" 
 height="300">
+  <script>
+    var Pictures;
 
+
+Pictures = ['https://i.postimg.cc/x14wKwwK/image-6483441.jpg', 'https://i.postimg.cc/x8fprgrf/image-6483441-1.jpg', 'https://i.postimg.cc/sx0gRQZ8/image-123986672-1.jpg', 'https://i.postimg.cc/cCLhkHY6/image-6483441-2.jpg', 'https://i.postimg.cc/CKpNTJD3/image-6483441-3.jpg', 'https://i.postimg.cc/gkwqx1K9/image-6483441-6.jpg', 'https://i.postimg.cc/MTPVTYMK/image-6483441-7.jpg', 'https://i.postimg.cc/g0GZH732/image-6483441-9.jpg', 'https://i.postimg.cc/s1FBQHVy/image-6483441-12.jpg'];
+let element_image = document.getElementById('image');
+Pictures.push(Pictures[0]);
+element_image.setAttribute("src", Pictures.shift());
+
+
+document.getElementById('button-next').addEventListener('click', (event) => {
+  let element_image2 = document.getElementById('image');
+  Pictures.unshift(Pictures[0]);
+  element_image2.setAttribute("src", Pictures.shift());
+
+});
+
+document.getElementById('button-next').addEventListener('click', (event) => {
+  let element_image3 = document.getElementById('image');
+  Pictures.unshift(Pictures[0]);
+  element_image3.setAttribute("src", Pictures.shift());
+
+});
+  </script>
 
 <button id="button-next">Next</button>
 </html>
