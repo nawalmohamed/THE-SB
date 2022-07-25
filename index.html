@@ -2,7 +2,7 @@
 <img id="image"
 width="350" 
 height="300">
-  <button id="button-next">Next</button>
+  <button id="turn">turn</button>
   <script>
     var Pictures;
 
@@ -13,14 +13,14 @@ Pictures.push(Pictures[0]);
 element_image.setAttribute("src", Pictures.shift());
 
 
-document.getElementById('button-next').addEventListener('click', (event) => {
+document.getElementById('turn').addEventListener('click', (event) => {
   let element_image2 = document.getElementById('image');
   Pictures.unshift(Pictures[0]);
   element_image2.setAttribute("src", Pictures.shift());
 
 });
 
-document.getElementById('button-next').addEventListener('click', (event) => {
+document.getElementById('turn').addEventListener('click', (event) => {
   let element_image3 = document.getElementById('image');
   Pictures.unshift(Pictures[0]);
   element_image3.setAttribute("src", Pictures.shift());
