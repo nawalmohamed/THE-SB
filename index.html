@@ -3,16 +3,41 @@
 width="350" 
 height="300">
   <button id="turn">turn</button>
+  <div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 3</div>
+    <img src="image1.jpg" style="width:100%">
+    <div class="Info">First caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 3</div>
+    <img src="image2.jpg" style="width:100%">
+    <div class="Info">Second Caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 3</div>
+    <img src="image3.jpg" style="width:100%">
+    <div class="Info">Third Caption</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
   <script>
     var Pictures;
-    
-    <div class="carousel">
-  <div class="carousel--item one"></div>
-  <div class="carousel--item two"></div>
-  <div class="carousel--item three"></div>
-  <div class="carousel--item four"></div>
-  <div class="carousel--item five"></div>
-</div>
 
 
 Pictures = ['https://i.postimg.cc/x14wKwwK/image-6483441.jpg', 'https://i.postimg.cc/x8fprgrf/image-6483441-1.jpg', 'https://i.postimg.cc/sx0gRQZ8/image-123986672-1.jpg', 'https://i.postimg.cc/cCLhkHY6/image-6483441-2.jpg', 'https://i.postimg.cc/CKpNTJD3/image-6483441-3.jpg', 'https://i.postimg.cc/gkwqx1K9/image-6483441-6.jpg', 'https://i.postimg.cc/MTPVTYMK/image-6483441-7.jpg', 'https://i.postimg.cc/g0GZH732/image-6483441-9.jpg', 'https://i.postimg.cc/s1FBQHVy/image-6483441-12.jpg'];
